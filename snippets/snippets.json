@@ -1,1 +1,36 @@
+{
+    "FatFree before route": {
+        "prefix": "ff.before",
+        "body": [
+          "function beforeRoute(){",
+          "",
+          "\t\\$f3 = \\$this->framework;",
+          "\t\\$db = \\$this->db;",
+          "",
+          "\t$0",
+          "}"
+        ],
+        "description": "FatFree before route"
+      },
+
+    "PHP Property": {
+        "prefix": "p.prop",
+        "body": [
+            "private ${1:Type} \\$${2:propName};",
+            "",
+            "public function get${2/([\\w\\-]+)/${1:/capitalize}/}(): $1 ",
+            "{",
+            "    return \\$this->$2;",
+            "}",
+            "",
+            "public function set${2/([\\w\\-]+)/${1:/capitalize}/}($1 \\$value): void ",
+            "{",
+            "    \\$this->$2 = \\$value;",
+            "}"
+        ],
+        "description": "PHP Property with getter and setter"
+    }
+      
+}
+
 
