@@ -1,0 +1,33 @@
+{
+    "name": "f3-snippets",
+    "displayName": "Fat-Free Framework Snippets for VSCode",
+    "description": "Snippet pack for the Fat-Free Framework (F3) to use with VSCode",
+    "version": "0.1.0",
+    "publisher": "miseeger",
+    "engines": {
+        "vscode": "^1.40.x"
+    },
+    "keywords": [
+        "Fat-Free Framework", "F3", "PHP", "Snippets", "Live Templates"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/miseeger/vscode-f3-snippets.git"
+      },
+    "categories": [
+        "Snippets"
+    ],
+    "icon": "images/f3_fav_144_precomposed.png",
+    "galleryBanner": {
+        "color": "#b345f1",
+        "theme": "dark"
+    },
+    "contributes": {
+        "snippets": [
+            {
+                "language": "php",
+                "path": "./snippets/snippets.json"
+            }
+        ]
+    }
+}
